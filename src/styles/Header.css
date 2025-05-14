@@ -1,0 +1,94 @@
+header {
+  background-color: #1f1f2e;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.header-jumbotron {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.header-jumbotron img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #7f8cff;
+  box-shadow: 0 0 30px rgba(127, 140, 255, 0.4);
+}
+
+.header-jumbotron h3 {
+  font-size: 2.7rem;
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #ffffff;
+}
+
+.header-jumbotron p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #ccccff;
+  margin: 0;
+}
+
+.socialMedia {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.socialMedia a {
+  width: 50px;
+  height: 50px;
+  background-color: #2a2a3d;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  box-shadow: 0 0 10px rgba(127, 140, 255, 0.3);
+}
+
+.socialMedia a:hover {
+  background-color: #7f8cff;
+  color: #1f1f2e;
+  transform: scale(1.1);
+}
+
+.socialMedia a svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header-jumbotron h3 {
+    font-size: 2.2rem;
+  }
+
+  .header-jumbotron p {
+    font-size: 1rem;
+  }
+
+  .socialMedia a {
+    width: 45px;
+    height: 45px;
+  }
+
+  .socialMedia a svg {
+    width: 20px;
+    height: 20px;
+  }
+}

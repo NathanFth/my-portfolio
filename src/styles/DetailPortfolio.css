@@ -1,0 +1,32 @@
+#detail-portfolio > .wrapper {
+  width: 60%;
+}
+#detail-portfolio > .wrapper > img {
+  margin: auto;
+  width: 100%;
+  border-radius: 10px;
+}
+#detail-portfolio > .wrapper > p.skill {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #222831;
+}
+.open-project-wrapper {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.open-project-button {
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: #7f8cff;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.open-project-button:hover {
+  background-color: #6573e0;
+}

@@ -1,0 +1,63 @@
+/* Warna background section experience */
+body {
+  background-color: #1a1a2e;
+}
+
+/* Wrapper tetap rapih */
+.wrapper {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Judul Experience */
+.wrapper h1 {
+  font-size: 2.8rem;
+  font-family: "Kanit", sans-serif;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 4px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+/* Garis vertical timeline */
+.vertical-timeline::before {
+  background: #7f8cff;
+}
+
+/* Box content tiap elemen */
+.vertical-timeline-element-content {
+  background: #2a2a40 !important;
+  color: #eee;
+  border-left: 4px solid #7f8cff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Judul dan subtitle */
+.vertical-timeline-element-content h3,
+.vertical-timeline-element-content h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* Isi paragraf */
+.vertical-timeline-element-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #cccccc;
+}
+
+/* Tanggal */
+.vertical-timeline-element-date {
+  color: #aaa;
+  font-weight: 500;
+}
+
+/* Ikon bulatan */
+.vertical-timeline-element-icon {
+  background: #7f8cff !important;
+  color: #fff;
+  box-shadow: 0 0 0 4px #1f1f2e, inset 0 2px 0 rgba(0, 0, 0, 0.2);
+}
