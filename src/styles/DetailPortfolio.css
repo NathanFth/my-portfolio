@@ -1,32 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@400;600&display=swap");
+
+#detail-portfolio {
+  background-color: #121418;
+  padding: 100px 0;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  text-align: center;
+}
+
 #detail-portfolio > .wrapper {
-  width: 60%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
-#detail-portfolio > .wrapper > img {
-  margin: auto;
+
+#detail-portfolio h1 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+  font-family: "Orbitron", sans-serif;
+  color: #ffffff;
+  letter-spacing: 4px;
+  text-shadow: 0 0 10px #c77dff, 0 0 20px #9d4edd;
+  border-bottom: 3px solid #7b2cbf;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+#detail-portfolio img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 16px;
+  box-shadow: 0 0 25px rgba(199, 125, 255, 0.4),
+    0 0 40px rgba(157, 78, 221, 0.3);
+  margin-bottom: 30px;
+  transition: transform 0.3s ease;
 }
-#detail-portfolio > .wrapper > p.skill {
-  text-align: center;
-  font-size: 1.5rem;
-  color: #222831;
+
+#detail-portfolio img:hover {
+  transform: scale(1.02);
 }
+
+#detail-portfolio p.skill {
+  font-size: 1.3rem;
+  color: #e0bbff;
+  text-shadow: 0 0 10px #b392f0;
+  margin-bottom: 40px;
+  font-weight: 500;
+}
+
 .open-project-wrapper {
-  margin-top: 20px;
   text-align: center;
+}
+
+@keyframes neon-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 20px #c77dff, 0 0 30px #9d4edd;
+  }
+  50% {
+    box-shadow: 0 0 30px #ff00ff, 0 0 50px #e0bbff;
+  }
+}
+
+.open-project-button {
+  /* tambahkan ini */
+  animation: neon-glow 3s infinite alternate;
 }
 
 .open-project-button {
   display: inline-block;
-  padding: 10px 25px;
-  background-color: #7f8cff;
-  color: white;
-  font-weight: 500;
+  padding: 12px 32px;
+  background: rgba(20, 20, 40, 0.4);
+  color: #e0bbff;
+  font-family: "Orbitron", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: none;
+  border-radius: 12px;
   text-decoration: none;
-  border-radius: 8px;
-  transition: background-color 0.3s ease;
+  box-shadow: 0 0 20px rgba(199, 125, 255, 0.4),
+    0 0 35px rgba(157, 78, 221, 0.3);
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
 }
 
 .open-project-button:hover {
-  background-color: #6573e0;
+  transform: scale(1.05);
+  color: #ffffff;
+  box-shadow: 0 0 25px rgba(255, 0, 255, 0.6), 0 0 45px rgba(199, 125, 255, 0.6);
+  background-color: rgba(157, 78, 221, 0.1);
+}
+
+@media only screen and (max-width: 768px) {
+  #detail-portfolio {
+    padding: 70px 0;
+  }
+
+  #detail-portfolio h1 {
+    font-size: 2.2rem;
+  }
+
+  #detail-portfolio p.skill {
+    font-size: 1.1rem;
+  }
 }

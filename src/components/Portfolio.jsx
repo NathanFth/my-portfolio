@@ -11,7 +11,8 @@ function Portfolio() {
             return (
               <div className="item" key={item.id}>
                 <Link to={`/portfolio/${item.id}`}>
-                  <img src={item.image} />
+                  <img src={item.image} alt={`Project ${item.title}`} />
+                  <p className="project-title">{item.title}</p>
                 </Link>
               </div>
             );

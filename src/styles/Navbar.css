@@ -1,132 +1,115 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
-
-* {
-  font-family: "Poppins", sans-serif;
-  box-sizing: border-box;
-}
+/* Font Orbitron */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap");
 
 .navbar {
-  background-color: #1f1f2e;
-  position: sticky;
+  font-family: "Orbitron", sans-serif;
+  position: fixed;
   top: 0;
-  z-index: 100;
-  padding: 0.8rem 2rem;
-  transition: background-color 0.3s ease;
+  width: 100%;
+  z-index: 999;
+  background: rgba(18, 20, 24, 0.85);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(157, 78, 221, 0.3);
+  transition: all 0.3s ease;
 }
 
 .navbar-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .navbar-logo a {
-  color: #fff;
-  font-size: 1.7rem;
-  font-weight: 700;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
   text-decoration: none;
-  letter-spacing: 3px;
-}
-
-.navbar-logo a {
-  color: #fff;
-  font-size: 1.7rem;
-  font-weight: 700;
-  text-decoration: none;
-  letter-spacing: 3px;
-  position: relative;
+  text-shadow: 0 0 10px #c77dff;
   transition: color 0.3s ease;
 }
 
-.navbar-logo a::after {
-  content: "";
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 0%;
-  height: 2px;
-  background-color: #7f8cff;
-  transition: width 0.4s ease-in-out;
-}
-
 .navbar-logo a:hover {
-  color: #7f8cff;
-}
-
-.navbar-logo a:hover::after {
-  width: 100%;
+  color: #e0aaff;
+  text-shadow: 0 0 15px #e0aaff;
 }
 
 .menu-toggle {
   background: none;
   border: none;
+  color: white;
   font-size: 1.8rem;
-  color: #fff;
-  display: none;
   cursor: pointer;
+  display: none;
+}
+
+.navbar-menu {
+  display: flex;
 }
 
 .navbar-menu ul {
-  list-style: none;
   display: flex;
+  list-style: none;
   gap: 2rem;
-  margin: 0;
-  padding: 0;
 }
 
 .navbar-menu ul li a {
-  color: #c3c3ff;
+  color: #ffffff;
   text-decoration: none;
-  font-weight: 500;
+  font-size: 1rem;
+  transition: 0.3s ease;
   position: relative;
-  transition: color 0.3s ease;
+  text-shadow: 0 0 5px #9d4edd;
 }
 
 .navbar-menu ul li a::after {
   content: "";
   position: absolute;
+  width: 0%;
+  height: 2px;
   bottom: -4px;
   left: 0;
-  width: 0;
-  height: 2px;
-  background-color: #7f8cff;
+  background: #c77dff;
   transition: width 0.3s ease;
 }
 
 .navbar-menu ul li a:hover {
-  color: #ffffff;
+  color: #e0aaff;
+  text-shadow: 0 0 10px #e0aaff;
 }
 
 .navbar-menu ul li a:hover::after {
   width: 100%;
 }
 
-@media (max-width: 1000px) {
+/* Responsive */
+@media (max-width: 768px) {
   .menu-toggle {
     display: block;
   }
 
   .navbar-menu {
-    display: none;
     position: absolute;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    background-color: #2a2a3d;
-    padding: 1.5rem 2rem;
+    top: 100%;
+    right: 0;
+    width: 220px;
+    background: rgba(18, 20, 24, 0.95);
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(199, 125, 255, 0.3);
+    display: none;
   }
 
   .navbar-menu.active {
-    display: block;
+    display: flex;
   }
 
   .navbar-menu ul {
     flex-direction: column;
-    gap: 1.2rem;
-  }
-
-  .navbar-menu ul li a {
-    padding: 10px 0;
-    display: block;
+    gap: 1rem;
   }
 }
