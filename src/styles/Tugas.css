@@ -1,0 +1,102 @@
+#tugas {
+  background-color: #121418;
+  padding: 100px 0;
+  font-family: "Orbitron", sans-serif;
+  color: #ffffff;
+  text-align: center;
+}
+
+#tugas .wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+#tugas h3 {
+  font-size: 3rem;
+  margin-bottom: 50px;
+  color: #ffffff;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px #c77dff, 0 0 20px #9d4edd;
+  border-bottom: 4px solid #7b2cbf;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  justify-items: center;
+}
+
+.grid > .item {
+  background: rgba(20, 20, 40, 0.4);
+  padding: 1rem;
+  border-radius: 16px;
+  box-shadow: 0 0 25px rgba(200, 150, 255, 0.3), 0 0 50px rgba(255, 0, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.grid > .item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px rgba(255, 0, 255, 0.6);
+}
+
+.project-title {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: #e0bbff;
+  text-shadow: 0 0 10px #b392f0;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+.tugas-date {
+  font-size: 0.95rem;
+  color: #bb99ff;
+  margin-top: 5px;
+  text-shadow: 0 0 5px #9d4edd;
+}
+
+.btn-detail {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #9d4edd;
+  color: #ffffff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-detail:hover {
+  background-color: #c77dff;
+  box-shadow: 0 0 10px #c77dff, 0 0 20px #9d4edd;
+}
+
+@media only screen and (max-width: 768px) {
+  #tugas {
+    padding: 70px 0;
+  }
+
+  #tugas h3 {
+    font-size: 2.4rem;
+  }
+
+  .grid {
+    gap: 25px;
+  }
+
+  .project-title {
+    font-size: 1rem;
+  }
+
+  .tugas-date {
+    font-size: 0.9rem;
+  }
+}

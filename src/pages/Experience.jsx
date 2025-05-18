@@ -29,8 +29,26 @@ function Experience() {
             </h4>
             <p>
               Ngikutin tutorial YouTube dan latihan bikin website pakai HTML dan
-              CSS. Pernah nyoba bikin halaman about me, project showcase, dan
-              contact form sederhana.
+              CSS. Pernah nyoba bikin form login, project showcase, dan contact
+              form sederhana.
+            </p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="2022 - 2025"
+            iconStyle={{ background: "#222831", color: "#fff" }}
+            icon={<IoLogoWebComponent />}
+          >
+            <h3 className="vertical-timeline-element-title">
+              Belajar Web Development
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              Ciwaruga, Bandung
+            </h4>
+            <p>
+              Ngikutin tutorial YouTube dan latihan bikin website pakai HTML dan
+              CSS. Pernah nyoba bikin form login, project showcase, dan contact
+              form sederhana.
             </p>
           </VerticalTimelineElement>
         </VerticalTimeline>

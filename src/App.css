@@ -5,12 +5,14 @@
 
 html,
 body {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   font-size: 16px;
   font-family: "Orbitron", sans-serif;
   scroll-behavior: smooth;
   background: transparent;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 body {
