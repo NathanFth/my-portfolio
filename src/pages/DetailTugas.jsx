@@ -182,7 +182,6 @@ function DetailTugas() {
           </Link>
         </div>
       </section>
-      <Footer />
       <ScrollToTop />
     </>
   );

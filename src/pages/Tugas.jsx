@@ -27,7 +27,6 @@ function Tugas() {
           </div>
         </div>
       </section>
-      <Footer />
       <ScrollToTop />
     </>
   );
