@@ -1,5 +1,5 @@
 // Header.jsx
-import profilePicture from "../assets/profile-picture1.png";
+import profilePicture from "../assets/profile-picture2.png";
 import { FaInstagram, FaTiktok, FaFacebookF } from "react-icons/fa";
 import "../styles/Header.css";
 import ParticlesBackground from "./ParticlesBackground";
