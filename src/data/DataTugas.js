@@ -7,15 +7,15 @@ export const tugasList = [
     date: "2025-05-01",
     details: "Logika First Order",
   },
+
+  {
+    id: "2",
+    title: "Tugas 2",
+    description: "Sistem Pakar Makanan",
+    date: "2025-07-20",
+    details: "",
+  },
 ];
-// {
-//   id: "2",
-//   title: "Form Kontak",
-//   description: "Membangun form kontak dengan EmailJS.",
-//   date: "2025-05-10",
-//   details:
-//     "Buat form yang mengirim email via EmailJS, validasi input, dan notifikasi sukses.",
-// },
 // {
 //   id: "3",
 //   title: "Mode Gelap/Terang",

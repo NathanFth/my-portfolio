@@ -1,8 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { tugasList } from "../data/DataTugas";
+import pakarData from "../data/PakarData";
+import { useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import SistemPakar from "../components/SistemPakar";
 import ScrollToTop from "../components/ScrollToTop";
 import "../styles/Tugas.css";
 
